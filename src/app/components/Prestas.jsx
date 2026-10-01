@@ -51,9 +51,9 @@ export default function Prestas() {
               <g
                 fill="none"
                 stroke="#e53e3e"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
               >
                 <path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16" />
                 <path d="m14.45 13.39l5.05-4.694C20.196 8 21 6.85 21 5.75a2.75 2.75 0 0 0-4.797-1.837a.276.276 0 0 1-.406 0A2.75 2.75 0 0 0 11 5.75c0 1.2.802 2.248 1.5 2.946L16 11.95M2 15l6 6" />
@@ -77,7 +77,7 @@ export default function Prestas() {
               <g fill="none" stroke="#e53e3e">
                 <circle cx="6" cy="5" r="1.5" />
                 <path
-                  stroke-linejoin="round"
+                  strokeLinejoin="round"
                   d="M6 .5a4.39 4.39 0 0 0-4.5 4.27c0 1.59.72 2.42 1.64 3.58s2 2.18 2.86 3.14c.87-1 2-2 2.85-3.14s1.65-2 1.65-3.58A4.59 4.59 0 0 0 6 .5z"
                 />
               </g>

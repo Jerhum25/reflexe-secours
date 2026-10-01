@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="bg-black">
       <Header />
-      <Hero />
+      <Hero photoHero="/images/hero.png"/>
       <Prestas />
       <APropos />
       <Formations />

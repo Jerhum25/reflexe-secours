@@ -1,7 +1,7 @@
 "use client";
-import Link from 'next/link';
+import Link from "next/link";
 /* eslint-disable react/no-unescaped-entities */
-export default function Formations() {
+export default function FormationsList() {
   const formations = [
     {
       src: (
@@ -64,48 +64,12 @@ export default function Formations() {
       subtitle: "Maintenir ses compétences",
       time: "1 jour (7h)",
     },
-    {
-      src: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="3em"
-          height="3em"
-          viewBox="0 0 256 256"
-        >
-          <path
-            fill="#e53e3e"
-            d="M112.6 158.43a58 58 0 1 0-57.2 0a93.83 93.83 0 0 0-50.19 38.29a6 6 0 0 0 10.05 6.56a82 82 0 0 1 137.48 0a6 6 0 0 0 10-6.56a93.83 93.83 0 0 0-50.14-38.29M38 108a46 46 0 1 1 46 46a46.06 46.06 0 0 1-46-46m211 97a6 6 0 0 1-8.3-1.74A81.8 81.8 0 0 0 172 166a6 6 0 0 1 0-12a46 46 0 1 0-17.08-88.73a6 6 0 1 1-4.46-11.14a58 58 0 0 1 50.14 104.3a93.83 93.83 0 0 1 50.19 38.29A6 6 0 0 1 249 205"
-          />
-        </svg>
-      ),
-      alt: "Formations sur mesure",
-      title: "Formations sur mesure",
-      subtitle: "Entreprises, collectivités, établissements scolaires",
-      time: "",
-    },
   ];
 
   return (
-    <div className="w-full flex justify-center bg-gray-200" id="formations">
-      <div className="xl:w-[90%] w-full flex lg:flex-row flex-col  text-black py-5">
-        <div className="lg:w-[30%] w-full h-fit p-5 flex flex-col gap-3">
-          <h2 className="uppercase flex gap-2 items-center text-[#e53e3e]">
-            nos formations
-          </h2>
-          <h3 className="text-3xl font-bold">Des formations pour tous</h3>
-          <p>
-            Que vous soyez particulier, salarié, étudiant ou professionnel, nous
-            proposons des formations adaptées à vos besoins.
-          </p>
-          <div className="w-full text-center lg:text-left">
-            <Link href="/FormationsDetails">
-              <button className="cursor-pointer bg-[#e53e3e] text-white rounded-md px-3 py-2 text-lg">
-                Voir toutes nos formations
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 flex-1 gap-5  lg:w-[70%] w-full  p-5 2xl:pr-0">
+    <div className="w-full flex justify-center bg-gray-200" id="services">
+      <div className="xl:w-[70%] w-full flex lg:flex-row flex-col  text-black py-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  flex-1 gap-5  lg:w-[70%] w-full  p-5 2xl:pr-0">
           {formations.map((formation, index) => (
             <div key={index} className="">
               <div className="w-auto h-full relative overflow-hidden rounded-lg group flex gap-2 justify-around items-center flex-col bg-white p-3">
@@ -114,6 +78,11 @@ export default function Formations() {
                   <h3 className="font-bold">{formation.title}</h3>
                   <p className="text-gray-400 text-sm">{formation.subtitle}</p>
                   <p className="text-gray-400 text-sm">{formation.time}</p>
+                  <Link href="/FormationsDetails" className="mt-4 mx-auto">
+                    <button className="cursor-pointer bg-[#e53e3e] text-white rounded-md px-3 py-2 text-lg">
+                      En savoir plus
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

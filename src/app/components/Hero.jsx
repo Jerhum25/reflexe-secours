@@ -31,7 +31,7 @@ export default function Hero() {
 
           <div className="flex gap-5 sm:gap-5 items-center mx-auto sm:justify-start justify-center flex-col sm:flex-row mb-10 sm:w-full w-fit">
             <button className="bg-[#e53e3e] border border-[#e53e3e] rounded-lg px-3 py-2 flex items-center gap-2 text-white w-full">
-              <a href="" className="font-semibold w-full text-nowrap">
+              <a href="#formations" className="font-semibold w-full text-nowrap">
                 Découvrir nos formations
               </a>
             </button>
