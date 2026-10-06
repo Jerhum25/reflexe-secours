@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Header from "./Header";
+import Link from "next/link"
 
 export default function Hero() {
   return (
@@ -36,9 +37,9 @@ export default function Hero() {
               </a>
             </button>
             <button className="bg-transparent border rounded-lg px-3 py-2 flex items-center gap-2 text-white w-full ">
-              <a href="tel:0622334455" className="font-semibold w-full">
+              <Link href="/ContactPage" className="font-semibold w-full">
                 Nous contacter
-              </a>
+              </Link>
             </button>
           </div>
         </div>

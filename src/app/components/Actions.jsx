@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 // Liste des projets pour simplifier le code et éviter la répétition
@@ -33,14 +34,21 @@ export default function Actions() {
       <div className="xl:w-[90%] w-full flex lg:flex-row flex-col  text-black py-5">
         <div className="lg:w-[30%] w-full h-fit p-5 flex flex-col gap-3">
           <h2 className="uppercase flex gap-2 items-center text-[#e53e3e]">
-             nos actions
+            nos actions
           </h2>
-          <h3 className="text-3xl font-bold">
-            Prévention & sensibilisation
-          </h3>
+          <h3 className="text-3xl font-bold">Prévention & sensibilisation</h3>
           <p>
-            Parce que les bons réflexes s'apprennent aussi au quotidien, nous intervenons dans de nombreux lieux pour sensibiliser aux risques et aux gestes qui sauvent.
+            Parce que les bons réflexes s'apprennent aussi au quotidien, nous
+            intervenons dans de nombreux lieux pour sensibiliser aux risques et
+            aux gestes qui sauvent.
           </p>
+          <div className="w-full text-center lg:text-left">
+            <Link href="/ActusPage">
+              <button className="cursor-pointer bg-[#e53e3e] text-white rounded-md px-3 py-2 text-lg">
+                Voir nos actualités
+              </button>
+            </Link>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 w-full flex-1 gap-8 pt-8 lg:w-[70%] p-5 2xl:pr-0">
@@ -57,13 +65,14 @@ export default function Actions() {
                   src={action.src}
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-              <div className="absolute bottom-0 left-0 text-white w-full h-[35%] sm:h-[45%] p-2">
-                <div className="bg-black left-0 bottom-0 opacity-60 absolute h-full w-full"></div>
-                <p className=" relative">{action.title}</p>
-                <p className="relative flex gap-1 text-gray-300">{action.subtitle}</p>
+                <div className="absolute bottom-0 left-0 text-white w-full h-[35%] sm:h-[45%] p-2">
+                  <div className="bg-black left-0 bottom-0 opacity-60 absolute h-full w-full"></div>
+                  <p className=" relative">{action.title}</p>
+                  <p className="relative flex gap-1 text-gray-300">
+                    {action.subtitle}
+                  </p>
+                </div>
               </div>
-              </div>
-
             </div>
           ))}
         </div>
