@@ -52,19 +52,19 @@ export default function Header() {
                 <Link href="/">Accueil</Link>
               </li>
               <li>
-                <a href="#apropos">l'association</a>
+                <a href="/#apropos">l'association</a>
               </li>
               <li>
-                <a href="#formations">formations</a>
+                <a href="/#formations">formations</a>
               </li>
               <li>
-                <a href="#actions">prévention</a>
+                <a href="/#actions">prévention</a>
               </li>
               <li>
-                <a href="#avis">actualité</a>
+                <Link href="/ActusPage">actualité</Link>
               </li>
               <li>
-                <a href="#contact">contact</a>
+                <a href="/#contact">contact</a>
               </li>
             </ul>
           </nav>

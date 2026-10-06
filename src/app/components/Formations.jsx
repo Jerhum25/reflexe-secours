@@ -98,7 +98,7 @@ export default function Formations() {
             proposons des formations adaptées à vos besoins.
           </p>
           <div className="w-full text-center lg:text-left">
-            <Link href="/FormationsDetails">
+            <Link href="/FormationsPage">
               <button className="cursor-pointer bg-[#e53e3e] text-white rounded-md px-3 py-2 text-lg">
                 Voir toutes nos formations
               </button>
