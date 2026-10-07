@@ -13,8 +13,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Réflexe Secours - Prévenir, Former, Secourir",
-  description: "Association de secourisme à Besançon. Contactez-nous pour en savoir plus sur nos formations.",icons: {
-    icon: '/images/favicon.svg', // Pointe vers public/favicon.svg
+  description:
+    "Association de secourisme à Besançon. Contactez-nous pour en savoir plus sur nos formations.",
+  icons: {
+    icon: "/images/favicon.svg", // Pointe vers public/favicon.svg
   },
 };
 

@@ -47,7 +47,7 @@ export default function Actus() {
                   />
                 </div>
                 <div className="p-3 flex flex-col gap-3">
-                  <p className="text-gray-300">{actu.date}</p>
+                  <p className="text-gray-500">{actu.date}</p>
                   <h4 className="font-bold">{actu.title}</h4>
                   <p>{actu.subtitle}</p>
                 </div>

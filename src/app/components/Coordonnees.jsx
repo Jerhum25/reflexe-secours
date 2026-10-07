@@ -53,7 +53,7 @@ export default function Coordonnees() {
                   clipRule="evenodd"
                 />
               </svg>
-              12 boulevard Kennedy
+              32 rue de l'Oratoire
               <br />
               25000 BESANCON
             </li>

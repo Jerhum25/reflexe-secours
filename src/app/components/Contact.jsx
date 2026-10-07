@@ -79,8 +79,8 @@ export default function Contact() {
                         />
                       </svg>
                     </div>
-                    <a href="mailto:reflexe-secours25@gmail.com">
-                      reflexe-secours25@gmail.com
+                    <a href="mailto:contact@reflexe-secours.fr">
+                      contact@reflexe-secours.fr
                     </a>
                   </div>
                   <div className="flex gap-3 items-center">
@@ -141,7 +141,7 @@ export default function Contact() {
                       </g>
                     </svg>
                   </a>
-                  <a href="https://www.linkedin.com/in/" target="_blank">
+                  <a href="https://www.linkedin.com" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="2em"

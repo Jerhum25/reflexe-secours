@@ -76,8 +76,8 @@ export default function FormationsList() {
                 {formation.src}
                 <div className="flex flex-col flex-1 justify-around w-full ">
                   <h3 className="font-bold">{formation.title}</h3>
-                  <p className="text-gray-400 text-sm">{formation.subtitle}</p>
-                  <p className="text-gray-400 text-sm">{formation.time}</p>
+                  <p className="text-gray-500 text-sm">{formation.subtitle}</p>
+                  <p className="text-gray-500 text-sm">{formation.time}</p>
                   <Link href="/FormationsDetails" className="mt-4 mx-auto">
                     <button className="cursor-pointer bg-[#e53e3e] text-white rounded-md px-3 py-2 text-lg">
                       En savoir plus

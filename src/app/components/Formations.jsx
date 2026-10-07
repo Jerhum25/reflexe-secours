@@ -112,8 +112,8 @@ export default function Formations() {
                 {formation.src}
                 <div className="flex flex-col flex-1 justify-around w-full ">
                   <h3 className="font-bold">{formation.title}</h3>
-                  <p className="text-gray-400 text-sm">{formation.subtitle}</p>
-                  <p className="text-gray-400 text-sm">{formation.time}</p>
+                  <p className="text-gray-500 text-sm">{formation.subtitle}</p>
+                  <p className="text-gray-500 text-sm">{formation.time}</p>
                 </div>
               </div>
             </div>
